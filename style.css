@@ -1,0 +1,276 @@
+/* Main CSS */
+html {
+  font-size: 100%;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+  color: rgb(80, 80, 80);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.block {
+  background-color: #fff;
+  border: 1px solid #f4f4f4;
+  padding: 25px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: crimson;
+  margin: 0;
+}
+
+.topbar {
+  height: 30px;
+}
+.topbar ul {
+  list-style: none;
+  color: #000;
+  float: right;
+}
+
+.topbar li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.logo {
+  float: left;
+}
+.logo h1 {
+  color: pink;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.menubar {
+  width: 100%;
+}
+.menu {
+  float: right;
+}
+
+.menu li {
+  list-style: none;
+  display: inline;
+  margin-left: 35px;
+}
+.menu li a {
+  color: rgb(247, 229, 232);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+h1 {
+  margin-top: 0;
+}
+.content {
+  margin-top: 10px;
+}
+.content-main {
+  float: left;
+  width: 65%;
+  padding-right: 15px;
+}
+
+.rightbar {
+  float: right;
+  width: 35%;
+}
+
+form {
+  border: 2px solid white;
+  padding: 22px 20px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid rgb(143, 143, 143);
+}
+
+.block links a {
+  text-decoration: none;
+}
+
+form label {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #000;
+}
+form input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #d3135a;
+  font-size: 12px;
+  width: 90px;
+  padding: 15px 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.details > div {
+  float: left;
+  width: calc(49% - 4px);
+  min-height: 205px;
+}
+
+.details div:first-child {
+  margin-right: 10px;
+}
+
+.links {
+  margin-left: 10px;
+}
+.links a {
+  width: 100%;
+  display: inline-block;
+}
+
+.links h4 {
+  margin: 0 0 10px 0;
+}
+
+.content-after {
+  background-color: rgb(219, 219, 219);
+  margin-top: 10px;
+}
+
+.content-after div {
+  margin: 10px;
+  width: 31%;
+  float: left;
+  padding: 10px 12px;
+}
+
+footer {
+  background-color: #666666;
+}
+
+footer ul {
+  list-style: none;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer li {
+  display: inline-block;
+}
+footer li:after {
+  content: "|";
+  color: white;
+}
+
+.footer2 {
+  padding-bottom: 25px;
+}
+.footer2 > div {
+  float: left;
+  margin-left: 60px;
+}
+
+.footer2-about {
+  width: 55%;
+  color: rgb(173, 173, 173);
+}
+
+.footer2-logo {
+  width: 30%;
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Media Queries */
+
+@media (max-width: 967px) {
+  section,
+  header,
+  .container,
+  .block,
+  .content-main,
+  .rightbar,
+  .details > div,
+  .content-after div {
+    width: 100%;
+    margin: 0;
+  }
+  header,
+  .rightbar {
+    text-align: center;
+  }
+  .content-main {
+    padding-right: 0;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+
+  .block,
+  .content-after div {
+    text-align: left;
+  }
+
+  .logo {
+    text-align: center;
+    float: none;
+  }
+  .menu {
+    float: none;
+    padding: 0;
+  }
+  .menu li {
+    margin: 0;
+  }
+  .topbar {
+    height: 40px;
+  }
+  .topbar ul {
+    float: none;
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+}
