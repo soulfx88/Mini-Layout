@@ -1,1 +1,1 @@
-# Whamedia Test Layout
+Mobile Friendly Test Layout 
